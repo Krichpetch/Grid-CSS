@@ -1,0 +1,95 @@
+/* 
+Copy font url from google 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    height: 100vh;
+    display: flex;
+    background-color: #383838ca;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 50px;
+    width: 950px;
+    height: 100vh;
+    /* background-color: #484848; */
+}
+
+.container .company{
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.company .logo{
+    background-image: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 50%, rgba(228,79,182,1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.company .name{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container .hr{
+    margin-top: 7px;
+    background-color: rgba(255, 157, 9, 0.879);
+    height: 3px;
+    width: 100%;
+}
+
+.container .text-start{
+    margin-top: 20px;
+    font-size: 38px;
+    font-weight: 400;
+    color: rgb(255, 149, 79);
+}
+
+.container .text-display{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffd7a8;
+}
+
+.container .footer{
+    margin-top: 75px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.grid-1-3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    }
